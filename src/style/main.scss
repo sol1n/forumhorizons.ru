@@ -1,0 +1,66 @@
+@import "../../bower_components/normalize-css/normalize.css";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700);
+
+$open-sans: 'Open Sans', sans-serif;
+
+body {
+	font-family: $open-sans;
+	font-size: 18px;
+	color: #fff;
+	@media only screen and (max-width: 425px) {
+		font-size: 16px;
+	}
+	@media only screen and (min-width: 1600px) { 
+		font-size: 24px;
+	}
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+	&:hover {
+		color: #eee;
+	}
+}
+
+.container {
+	background-image: url('/assets/images/background.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	min-height: 100vh;
+	height: 100vh;
+
+	header {
+		margin-top: 4vh;
+		text-align: center;
+	}
+
+	.wrapper {
+		margin-top: 10vh;
+		text-align: center;
+		h1 {
+			font-size: 2.3em;
+			font-weight: bold;
+  			line-height: 3.6rem;
+  			@media only screen and (max-width: 425px) {
+				line-height: 2.6rem;
+			}
+		}
+	}
+
+	footer {
+		position: absolute;
+		bottom: 4vh;
+		font-size: 0.8em;
+		font-weight: 300;
+		text-align: center;
+		display: block;
+		width: 100%;
+
+		.links {
+			margin-bottom: 5vh;
+		}
+	}
+}
